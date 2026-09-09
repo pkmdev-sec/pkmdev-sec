@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="700" viewBox="0 0 640 700" role="img" aria-labelledby="title desc">
+<title id="title">CIS HARDENED AMI — conceptual workflow</title>
+<desc id="desc">Packer build to Ansible rules to Image hardening to AMI artifact. Image creation and hardening rules stay separate. Uses upstream AMAZON2-CIS rules</desc>
+<defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#ffffff" opacity=".035"/></pattern><linearGradient id="glow"><stop stop-color="#ffb978" stop-opacity=".13"/><stop offset="1" stop-color="#10151d" stop-opacity="0"/></linearGradient></defs>
+<rect width="640" height="700" fill="#10151d"/>
+<rect width="640" height="700" fill="url(#grid)"/>
+<rect width="640" height="700" fill="url(#glow)"/>
+<path d="M0 0H640" stroke="#ffb978" stroke-width="5"/>
+<text x="30" y="43" fill="#ffb978" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="600" letter-spacing="2">CLOUD SECURITY / REPEATABLE IMAGE BUILDS</text>
+<text x="30" y="92" fill="#f0f2f5" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700" letter-spacing="0">CIS HARDENED AMI</text>
+<rect x="30" y="130" width="580" height="98" rx="8" fill="#171e28" stroke="#34404d"/>
+<text x="48" y="159" fill="#ffb978" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="600" letter-spacing="2">01</text>
+<text x="48" y="202" fill="#f0f2f5" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="600" letter-spacing="0">Packer build</text>
+<path d="M320 229v12m-5-5 5 5 5-5" fill="none" stroke="#ffb978" stroke-width="2"/>
+<rect x="30" y="242" width="580" height="98" rx="8" fill="#171e28" stroke="#34404d"/>
+<text x="48" y="271" fill="#ffb978" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="600" letter-spacing="2">02</text>
+<text x="48" y="314" fill="#f0f2f5" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="600" letter-spacing="0">Ansible rules</text>
+<path d="M320 341v12m-5-5 5 5 5-5" fill="none" stroke="#ffb978" stroke-width="2"/>
+<rect x="30" y="354" width="580" height="98" rx="8" fill="#171e28" stroke="#34404d"/>
+<text x="48" y="383" fill="#ffb978" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="600" letter-spacing="2">03</text>
+<text x="48" y="426" fill="#f0f2f5" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="600" letter-spacing="0">Image hardening</text>
+<path d="M320 453v12m-5-5 5 5 5-5" fill="none" stroke="#ffb978" stroke-width="2"/>
+<rect x="30" y="466" width="580" height="98" rx="8" fill="#171e28" stroke="#34404d"/>
+<text x="48" y="495" fill="#ffb978" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="600" letter-spacing="2">04</text>
+<text x="48" y="538" fill="#f0f2f5" font-family="Arial,Helvetica,sans-serif" font-size="32" font-weight="600" letter-spacing="0">AMI artifact</text>
+<text x="30" y="618" fill="#aebac7" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="400" letter-spacing="0">Image creation and hardening rules stay separate</text>
+<text x="30" y="650" fill="#aebac7" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="400" letter-spacing="0">Uses upstream AMAZON2-CIS rules</text>
+</svg>
