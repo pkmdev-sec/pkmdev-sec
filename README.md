@@ -27,7 +27,7 @@
 - 🧱 **[CIS Hardened AMI](https://github.com/pkmdev-sec/CIS-Hardened-AMI)** — Builds repeatable cloud images from CIS hardening rules.
 - 🌩️ **[AWS Subdomain Takeover Detector](https://github.com/pkmdev-sec/AWS_Subdomain_Takeover_Detector)** — Checks AWS DNS records for possible takeover risk.
 - 🌲 **[Arbor](https://github.com/pkmdev-sec/Arbor)** — Runs Claude Code agents in separate Git worktrees.
-- ✦ **[Zenith](https://github.com/pkmdev-sec/zenith)** — Connects research claims to sources and review steps.
+- ✦  **[Zenith](https://github.com/pkmdev-sec/zenith)** — Connects research claims to sources and review steps.
 
 ## Project Index
 
@@ -80,23 +80,18 @@ The main public projects are listed below. Use the [repository view](https://git
 ### Apps & Interfaces
 
 - 🔖 **[MarklyAI](https://github.com/pkmdev-sec/MarklyAI)** — An AI-assisted bookmark manager for macOS.
-- ⌚ **[Noop-clone](https://github.com/pkmdev-sec/Noop-clone)** — A public fork of an offline WHOOP companion.
-- 🖥️ **[muxy](https://github.com/pkmdev-sec/muxy)** — A public fork of a lightweight SwiftUI terminal for macOS.
-- ✨ **[purewin-ui](https://github.com/pkmdev-sec/purewin-ui)** — A 3D marketing site built with React and Spline.
-- 🪟 **[arcmark-windows](https://github.com/pkmdev-sec/arcmark-windows)** — A Windows bookmark manager built with WPF and .NET 8.
-- 🧹 **[purewin](https://github.com/pkmdev-sec/purewin)** — A public fork of a Windows cleanup and optimization CLI.
+- 🖥️ **[muxy](https://github.com/pkmdev-sec/muxy)** — A public fork of a lightweight SwiftUI terminal 
+- 🧹 **[purewin](https://github.com/pkmdev-sec/purewin)** — A tool everyone wants in Windows for to cleanup and optimization smoothly and easily without scratching your head around and worry seeing that complex system.
 
-### Skylily: AI & Products
+### AI & Products
 
-- 💰 **[skylily-cost-tracker](https://github.com/pkmdev-sec/skylily-cost-tracker)** — Tracks and reviews LLM API costs.
-- 🧠 **[skylily-smart-router](https://github.com/pkmdev-sec/skylily-smart-router)** — Routes tasks to models by complexity.
-- 📚 **[skylily-doc-gen](https://github.com/pkmdev-sec/skylily-doc-gen)** — Generates documentation from a codebase.
-- 🌿 **[skylily-git-smart](https://github.com/pkmdev-sec/skylily-git-smart)** — Helps write commits, changelogs, and pull requests.
-- 📊 **[skylily-dashboard](https://github.com/pkmdev-sec/skylily-dashboard)** — A dashboard for the Skylily tool set.
-- 💓 **[skylily-pulsed](https://github.com/pkmdev-sec/skylily-pulsed)** — Reports system, container, network, and service health.
-- 🚪 **[skylily-llm-proxy](https://github.com/pkmdev-sec/skylily-llm-proxy)** — A proxy for LLM requests.
-- 🧭 **[skylily-code-router](https://github.com/pkmdev-sec/skylily-code-router)** — Routes tasks to installed coding agents.
-- 🧩 **[skylily-skill](https://github.com/pkmdev-sec/skylily-skill)** — Shell tools for Skylily skills.
+- 💰 **[ai-cost-tracker](https://github.com/pkmdev-sec/skylily-cost-tracker)** — Tracks and reviews LLM API costs.
+- 🧠 **[ai-smart-router](https://github.com/pkmdev-sec/skylily-smart-router)** — Routes tasks to models by complexity.
+- 📚 **[ai-doc-gen](https://github.com/pkmdev-sec/skylily-doc-gen)** — Generates documentation from a codebase.
+- 🌿 **[ai-git-smart](https://github.com/pkmdev-sec/skylily-git-smart)** — Helps write commits, changelogs, and PR descriptions.
+- 🚪 **[ai-llm-proxy](https://github.com/pkmdev-sec/skylily-llm-proxy)** — A proxy for LLM requests.
+- 🧭 **[ai-code-router](https://github.com/pkmdev-sec/skylily-code-router)** — Routes tasks to installed coding agents.
+- 🧩 **[agentic-skill](https://github.com/pkmdev-sec/skylily-skill)** — Shell tools for Skylily skills.
 
 ## Build History
 
