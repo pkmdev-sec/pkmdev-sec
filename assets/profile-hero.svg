@@ -26,6 +26,17 @@
     <clipPath id="frame">
       <rect x="1" y="1" width="1198" height="358" rx="26"/>
     </clipPath>
+    <style>
+      .orbit-dash { transform-box:fill-box; transform-origin:center; animation:orbit-spin 18s linear infinite; }
+      .signal-node { transform-box:fill-box; transform-origin:center; animation:node-pulse 3s ease-in-out infinite; }
+      .phase-two { animation-delay:-1s; }
+      .phase-three { animation-delay:-2s; }
+      .signal-line { animation:line-glow 4s ease-in-out infinite; }
+      @keyframes orbit-spin { to { transform:rotate(360deg); } }
+      @keyframes node-pulse { 0%,100% { opacity:.55; transform:scale(.75); } 50% { opacity:1; transform:scale(1.2); } }
+      @keyframes line-glow { 0%,100% { opacity:.7; } 50% { opacity:1; } }
+      @media (prefers-reduced-motion:reduce) { .orbit-dash,.signal-node,.signal-line { animation:none; } }
+    </style>
   </defs>
 
   <g clip-path="url(#frame)">
@@ -43,7 +54,7 @@
 
       <text x="0" y="102" fill="#F8FAFC" font-size="64" font-weight="800" letter-spacing="-2">PUNEET</text>
       <text x="0" y="157" fill="#A5B4FC" font-size="44" font-weight="650" letter-spacing="4">KUMAR MAURYA</text>
-      <rect x="0" y="180" width="520" height="3" rx="1.5" fill="url(#accent)"/>
+      <rect class="signal-line" x="0" y="180" width="520" height="3" rx="1.5" fill="url(#accent)"/>
       <text x="0" y="218" fill="#94A3B8" font-size="16" font-weight="600" letter-spacing="2.5">SECURITY ENGINEER · OPEN-SOURCE BUILDER</text>
 
       <g transform="translate(0 246)" font-size="11" font-weight="700" letter-spacing="1.2">
@@ -64,14 +75,14 @@
 
     <g transform="translate(931 178)">
       <circle r="117" fill="none" stroke="#8B5CF6" stroke-opacity="0.18"/>
-      <circle r="88" fill="none" stroke="#22D3EE" stroke-opacity="0.24" stroke-dasharray="4 11"/>
+      <circle r="88" class="orbit-dash" fill="none" stroke="#22D3EE" stroke-opacity="0.24" stroke-dasharray="4 11"/>
       <circle r="60" fill="#0B1020" stroke="url(#accent)" stroke-width="2"/>
       <circle r="48" fill="none" stroke="#F8FAFC" stroke-opacity="0.08"/>
       <path d="M0-34 30-17v34L0 34-30 17v-34Z" fill="none" stroke="url(#accent)" stroke-width="2.5"/>
       <path d="M-15 1-4 12 19-14" fill="none" stroke="#F8FAFC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="-92" cy="-72" r="4" fill="#22D3EE"/>
-      <circle cx="108" cy="-46" r="5" fill="#8B5CF6"/>
-      <circle cx="84" cy="91" r="3.5" fill="#EC4899"/>
+      <circle class="signal-node" cx="-92" cy="-72" r="4" fill="#22D3EE"/>
+      <circle class="signal-node phase-two" cx="108" cy="-46" r="5" fill="#8B5CF6"/>
+      <circle class="signal-node phase-three" cx="84" cy="91" r="3.5" fill="#EC4899"/>
       <path d="M-92-72 0-34M108-46 30-17M84 91 0 34" stroke="#64748B" stroke-opacity="0.32"/>
       <circle r="8" fill="#8B5CF6" opacity="0.32" filter="url(#softGlow)"/>
     </g>

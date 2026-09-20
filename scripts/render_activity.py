@@ -212,16 +212,20 @@ def contribution_grid(days: list[Contribution], layout: Layout) -> str:
             f'<text x="{layout.grid_x - 14}" y="{y}" text-anchor="end" fill="#4F8C72" '
             f'font-size="{layout.grid_label_size - 1}" font-weight="650">{label}</text>'
         )
+    radii = (1.8, 2.5, 3.0, 3.6, 4.0) if layout.mobile else (3.0, 4.0, 5.0, 6.0, 7.0)
     for item in days:
         week = (item.day - start).days // 7
         weekday = (item.day.weekday() + 1) % 7
-        x = layout.grid_x + week * pitch
-        y = layout.grid_y + weekday * pitch
-        color = LEVEL_COLORS[max(0, min(item.level, 4))]
+        x = layout.grid_x + week * pitch + layout.cell / 2
+        y = layout.grid_y + weekday * pitch + layout.cell / 2
+        level = max(0, min(item.level, 4))
+        color = LEVEL_COLORS[level]
         label = "contribution" if item.count == 1 else "contributions"
+        delay = -((week * 7 + weekday) % 13) * 0.17
         pieces.append(
-            f'<rect x="{x}" y="{y}" width="{layout.cell}" height="{layout.cell}" rx="3" fill="{color}">'
-            f'<title>{item.day.isoformat()}: {item.count} {label}</title></rect>'
+            f'<circle class="activity-dot level-{level}" cx="{x:g}" cy="{y:g}" r="{radii[level]}" '
+            f'fill="{color}" style="animation-delay:{delay:.2f}s">'
+            f'<title>{item.day.isoformat()}: {item.count} {label}</title></circle>'
         )
     return "".join(pieces)
 
@@ -248,20 +252,28 @@ def render_svg(days: list[Contribution], layout: Layout) -> str:
   <linearGradient id="history-line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#14532D"/><stop offset=".5" stop-color="#22C55E"/><stop offset="1" stop-color="#86EFAC"/></linearGradient>
   <radialGradient id="history-glow"><stop stop-color="#22C55E" stop-opacity=".2"/><stop offset="1" stop-color="#22C55E" stop-opacity="0"/></radialGradient>
   <pattern id="history-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#86EFAC" stroke-opacity=".035"/></pattern>
+  <style>
+    .activity-dot {{ transform-box:fill-box; transform-origin:center; }}
+    .level-1,.level-2,.level-3,.level-4 {{ animation:activity-pulse 3.4s ease-in-out infinite; }}
+    .signal-ring {{ transform-box:fill-box; transform-origin:center; animation:signal 2.8s ease-out infinite; }}
+    @keyframes activity-pulse {{ 0%,100% {{ opacity:.72; transform:scale(.86); }} 50% {{ opacity:1; transform:scale(1); }} }}
+    @keyframes signal {{ 0% {{ opacity:.5; transform:scale(.6); }} 70%,100% {{ opacity:0; transform:scale(1.2); }} }}
+    @media (prefers-reduced-motion:reduce) {{ .activity-dot,.signal-ring {{ animation:none; }} }}
+  </style>
 </defs>
 <rect x="1" y="1" width="{layout.width - 2}" height="{layout.height - 2}" rx="24" fill="url(#history-bg)" stroke="#1B5E43" stroke-width="2"/>
 <rect x="1" y="1" width="{layout.width - 2}" height="{layout.height - 2}" rx="24" fill="url(#history-grid)"/>
 <ellipse cx="{layout.width - 80}" cy="20" rx="260" ry="170" fill="url(#history-glow)"/>
 <rect x="1" y="1" width="{layout.width - 2}" height="4" rx="2" fill="url(#history-line)"/>
 <g font-family="Inter,Segoe UI,Arial,sans-serif">
-  <circle cx="{40 if layout.mobile else 48}" cy="37" r="5" fill="#22C55E"/><circle cx="{40 if layout.mobile else 48}" cy="37" r="12" fill="none" stroke="#22C55E" stroke-opacity=".22"/>
+  <circle cx="{40 if layout.mobile else 48}" cy="37" r="5" fill="#22C55E"/><circle class="signal-ring" cx="{40 if layout.mobile else 48}" cy="37" r="12" fill="none" stroke="#22C55E" stroke-opacity=".32"/>
   <text x="{60 if layout.mobile else 68}" y="41" fill="#86EFAC" font-size="10" font-weight="750" letter-spacing="2">PKM / PUBLIC LOG</text>
   {heading}
   {summary_cards(summary, layout)}
   {contribution_grid(days, layout)}
   <g transform="translate({layout.grid_x} {layout.height - 27})" font-size="9" font-weight="650" letter-spacing="1">
     <text fill="#4F8C72">LESS</text>
-    {''.join(f'<rect x="{39 + index * 17}" y="-10" width="11" height="11" rx="2.5" fill="{color}"/>' for index, color in enumerate(LEVEL_COLORS))}
+    {''.join(f'<circle cx="{44 + index * 17}" cy="-4.5" r="{2.5 + index * .7:g}" fill="{color}"/>' for index, color in enumerate(LEVEL_COLORS))}
     <text x="132" fill="#4F8C72">MORE</text>
   </g>
   <text x="{layout.width - 42}" y="{layout.height - 25}" text-anchor="end" fill="#4F8C72" font-size="9" font-weight="650" letter-spacing="1.1">SNAPSHOT · {updated}</text>

@@ -23,6 +23,17 @@
     <clipPath id="frame">
       <rect x="1" y="1" width="718" height="638" rx="26"/>
     </clipPath>
+    <style>
+      .orbit-dash { transform-box:fill-box; transform-origin:center; animation:orbit-spin 18s linear infinite; }
+      .signal-node { transform-box:fill-box; transform-origin:center; animation:node-pulse 3s ease-in-out infinite; }
+      .phase-two { animation-delay:-1s; }
+      .phase-three { animation-delay:-2s; }
+      .signal-line { animation:line-glow 4s ease-in-out infinite; }
+      @keyframes orbit-spin { to { transform:rotate(360deg); } }
+      @keyframes node-pulse { 0%,100% { opacity:.55; transform:scale(.75); } 50% { opacity:1; transform:scale(1.2); } }
+      @keyframes line-glow { 0%,100% { opacity:.7; } 50% { opacity:1; } }
+      @media (prefers-reduced-motion:reduce) { .orbit-dash,.signal-node,.signal-line { animation:none; } }
+    </style>
   </defs>
 
   <g clip-path="url(#frame)">
@@ -32,13 +43,13 @@
 
     <g transform="translate(360 178)">
       <circle r="116" fill="none" stroke="#8B5CF6" stroke-opacity="0.18"/>
-      <circle r="87" fill="none" stroke="#22D3EE" stroke-opacity="0.24" stroke-dasharray="4 11"/>
+      <circle r="87" class="orbit-dash" fill="none" stroke="#22D3EE" stroke-opacity="0.24" stroke-dasharray="4 11"/>
       <circle r="59" fill="#0B1020" stroke="url(#accent)" stroke-width="2"/>
       <path d="M0-34 30-17v34L0 34-30 17v-34Z" fill="none" stroke="url(#accent)" stroke-width="2.5"/>
       <path d="M-15 1-4 12 19-14" fill="none" stroke="#F8FAFC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="-90" cy="-70" r="4" fill="#22D3EE"/>
-      <circle cx="105" cy="-44" r="5" fill="#8B5CF6"/>
-      <circle cx="82" cy="88" r="3.5" fill="#EC4899"/>
+      <circle class="signal-node" cx="-90" cy="-70" r="4" fill="#22D3EE"/>
+      <circle class="signal-node phase-two" cx="105" cy="-44" r="5" fill="#8B5CF6"/>
+      <circle class="signal-node phase-three" cx="82" cy="88" r="3.5" fill="#EC4899"/>
     </g>
 
     <g font-family="Inter,Segoe UI,Arial,sans-serif" text-anchor="middle">
