@@ -1,10 +1,3 @@
-<p align="center">
-  <picture>
-    <source media="(max-width: 600px)" srcset="assets/profile-hero-mobile.svg">
-    <img src="assets/profile-hero.svg" alt="Puneet Kumar Maurya — AI security, agent systems, and cloud engineering" width="100%">
-  </picture>
-</p>
-
 <h1 align="center">Hi, I'm Puneet 👋</h1>
 
 <p align="center">
@@ -17,6 +10,7 @@
 
 <p align="center">
   <a href="#selected-work">Selected work</a> &nbsp;·&nbsp;
+  <a href="#project-index">Project index</a> &nbsp;·&nbsp;
   <a href="#build-history">Build history</a> &nbsp;·&nbsp;
   <a href="#current-focus">Current focus</a> &nbsp;·&nbsp;
   <a href="#career">Career</a> &nbsp;·&nbsp;
@@ -25,114 +19,88 @@
 
 ## Selected Work
 
-Nine projects show the main ideas behind my work: clear evidence, controlled agents, and secure cloud systems.
+- 🔍 **[Morphex](https://github.com/pkmdev-sec/morphex.sh)** — Reads code context and explains why a possible secret needs attention.
+- ◈ **[Orvek](https://github.com/pkmdev-sec/orvek)** — A native terminal coding agent with local tools and resumable sessions.
+- 👁️ **[Veyro](https://github.com/pkmdev-sec/veyro)** — Observes coding-agent sessions and requires explicit approvals for control actions.
+- 📦 **[Agent Sandbox Orchestrator](https://github.com/pkmdev-sec/agents-sandboxing)** — Runs Claude Code jobs in isolated containers.
+- ⚙️ **[Praxis Engine](https://github.com/pkmdev-sec/praxis-engine)** — Compresses agent knowledge and retrieves the parts that match a task.
+- 🧱 **[CIS Hardened AMI](https://github.com/pkmdev-sec/CIS-Hardened-AMI)** — Builds repeatable cloud images from CIS hardening rules.
+- 🌩️ **[AWS Subdomain Takeover Detector](https://github.com/pkmdev-sec/AWS_Subdomain_Takeover_Detector)** — Checks AWS DNS records for possible takeover risk.
+- 🌲 **[Arbor](https://github.com/pkmdev-sec/Arbor)** — Runs Claude Code agents in separate Git worktrees.
+- ✦ **[Zenith](https://github.com/pkmdev-sec/zenith)** — Connects research claims to sources and review steps.
 
-<table>
-<tr>
-<td width="50%" valign="top">
+## Project Index
 
-### 01 · 🔍 [Morphex](https://github.com/pkmdev-sec/morphex.sh)
+The main public projects are listed below. Use the [repository view](https://github.com/pkmdev-sec?tab=repositories) to see every repository.
 
-`GO` `SECRET SCANNING`
+### Agent Systems & Developer Tools
 
-Reads code context before it reports a secret. Each result explains why it needs attention.
+- 🧬 **[sigil](https://github.com/pkmdev-sec/sigil)** — A prompt engineering platform for Claude Code.
+- 🧠 **[openclaw-mem](https://github.com/pkmdev-sec/openclaw-mem)** — Stores and searches agent memory, with local models and optional device sync.
+- 🌲 **[Arbor](https://github.com/pkmdev-sec/Arbor)** — Runs Claude Code workers in parallel with separate context.
+- 🎛️ **[praxis](https://github.com/pkmdev-sec/praxis)** — Assigns thinking budgets from task complexity and tracks cost.
+- 🧭 **[revolutionary-ai-orchestrator](https://github.com/pkmdev-sec/revolutionary-ai-orchestrator)** — Runs isolated AI workers in tmux.
+- ⚡ **[rust-ai-gateway](https://github.com/pkmdev-sec/rust-ai-gateway)** — An AI API gateway written in Rust.
+- ⚙️ **[praxis-engine](https://github.com/pkmdev-sec/praxis-engine)** — The Rust engine for Praxis.
+- 🧩 **[claude-intelligence-setup](https://github.com/pkmdev-sec/claude-intelligence-setup)** — Adds hooks, agents, and a learning loop to Claude Code.
+- ◈ **[orvek](https://github.com/pkmdev-sec/orvek)** — A native coding agent with local tools and resumable sessions.
+- 🛠️ **[forge](https://github.com/pkmdev-sec/forge)** — Creates custom tools from YAML and serves them through MCP.
+- ⏪ **[echo](https://github.com/pkmdev-sec/echo)** — Records agent sessions and shows usage analytics.
+- 🔀 **[chimera](https://github.com/pkmdev-sec/chimera)** — Routes requests across model providers and handles failover.
+- 🌐 **[umwelt](https://github.com/pkmdev-sec/umwelt)** — Describes the working environment for AI-assisted development.
+- 🔗 **[nexus](https://github.com/pkmdev-sec/nexus)** — Keeps cross-session context in a knowledge graph.
+- 🐉 **[hydra](https://github.com/pkmdev-sec/hydra)** — Runs several models and compares quality and cost.
+- 🔮 **[oracle](https://github.com/pkmdev-sec/oracle)** — Predicts and loads files that may matter to the next task.
+- 👁️ **[veyro](https://github.com/pkmdev-sec/veyro)** — Supervises coding agents locally and asks for exact approvals.
+- 🌱 **[pi-evolver](https://github.com/pkmdev-sec/pi-evolver)** — Learns from Pi sessions and proposes reviewed skills.
+- 📚 **[claude-max-context](https://github.com/pkmdev-sec/claude-max-context)** — Tunes compaction and keeps state during Claude Code sessions.
+- 🐥 **[golduck](https://github.com/pkmdev-sec/golduck)** — A model-independent terminal agent with tools and a full TUI.
+- ✦ **[zenith](https://github.com/pkmdev-sec/zenith)** — A terminal research agent that keeps claims and sources together.
+- 🧠 **[engram](https://github.com/pkmdev-sec/engram)** — Adds useful knowledge from past sessions to new sessions.
+- 🔎 **[cocoindex-claude-code](https://github.com/pkmdev-sec/cocoindex-claude-code)** — Adds semantic document search to Claude Code through MCP.
+- 📝 **[claude-auto-documenter-v2](https://github.com/pkmdev-sec/claude-auto-documenter-v2)** — Generates project documentation through an MCP server.
 
-</td>
-<td width="50%" valign="top">
+### Security & Cloud Engineering
 
-### 02 · ◈ [Orvek](https://github.com/pkmdev-sec/orvek)
+- 🛡️ **[warden](https://github.com/pkmdev-sec/warden)** — Enforces policies and records an audit trail.
+- 📦 **[agents-sandboxing](https://github.com/pkmdev-sec/agents-sandboxing)** — Runs Claude Code jobs in isolated containers.
+- 👻 **[specter](https://github.com/pkmdev-sec/specter)** — Checks syntax, security, and agent output quality.
+- 🔍 **[morphex.sh](https://github.com/pkmdev-sec/morphex.sh)** — Scans code for secrets and explains each result.
+- 🌩️ **[AWS_Subdomain_Takeover_Detector](https://github.com/pkmdev-sec/AWS_Subdomain_Takeover_Detector)** — Checks AWS DNS records for possible subdomain takeover.
+- ⛓️ **[web3-blockchain-learning-curriculum](https://github.com/pkmdev-sec/web3-blockchain-learning-curriculum)** — A Web3 and blockchain security learning path.
+- ☁️ **[Cloudflare_waf_alerting](https://github.com/pkmdev-sec/Cloudflare_waf_alerting)** — Sends alerts for Cloudflare WAF events.
+- 🚨 **[Detect-Public-AWS-resources-misconfigured-via-Policy-Realtime](https://github.com/pkmdev-sec/Detect-Public-AWS-resources-misconfigured-via-Policy-Realtime)** — Detects AWS policy changes that can expose resources.
+- 🧱 **[CIS-Hardened-AMI](https://github.com/pkmdev-sec/CIS-Hardened-AMI)** — Builds hardened Amazon Machine Images from CIS rules.
+- 🌐 **[Detecting_Elastic_IP_Takeover_Realtime](https://github.com/pkmdev-sec/Detecting_Elastic_IP_Takeover_Realtime)** — Detects exposed Elastic IP configurations.
+- 🧰 **[AWS_Waf-Automation](https://github.com/pkmdev-sec/AWS_Waf-Automation)** — A set of AWS WAF automation scripts.
+- 🔐 **[AWS_Cloud_Security_Automations](https://github.com/pkmdev-sec/AWS_Cloud_Security_Automations)** — A collection of AWS security automations.
+- 🧭 **[R53-Orphaned-Entries-Detection](https://github.com/pkmdev-sec/R53-Orphaned-Entries-Detection)** — Finds orphaned Route 53 records in an AWS account.
+- 🪣 **[Reatime_S3_Public_Bucket-Object_Alerts](https://github.com/pkmdev-sec/Reatime_S3_Public_Bucket-Object_Alerts)** — Sends Slack alerts when an S3 bucket or object becomes public.
 
-`RUST` `CODING AGENT`
+### Apps & Interfaces
 
-A native terminal agent with local tools, resumable sessions, shared memory, and context compaction.
+- 🔖 **[MarklyAI](https://github.com/pkmdev-sec/MarklyAI)** — An AI-assisted bookmark manager for macOS.
+- ⌚ **[Noop-clone](https://github.com/pkmdev-sec/Noop-clone)** — A public fork of an offline WHOOP companion.
+- 🖥️ **[muxy](https://github.com/pkmdev-sec/muxy)** — A public fork of a lightweight SwiftUI terminal for macOS.
+- ✨ **[purewin-ui](https://github.com/pkmdev-sec/purewin-ui)** — A 3D marketing site built with React and Spline.
+- 🪟 **[arcmark-windows](https://github.com/pkmdev-sec/arcmark-windows)** — A Windows bookmark manager built with WPF and .NET 8.
+- 🧹 **[purewin](https://github.com/pkmdev-sec/purewin)** — A public fork of a Windows cleanup and optimization CLI.
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+### Skylily: AI & Products
 
-### 03 · 👁️ [Veyro](https://github.com/pkmdev-sec/veyro)
-
-`PYTHON` `LOCAL SUPERVISION`
-
-Observes coding-agent sessions and uses explicit approvals before control actions.
-
-</td>
-<td width="50%" valign="top">
-
-### 04 · 📦 [Agent Sandbox Orchestrator](https://github.com/pkmdev-sec/agents-sandboxing)
-
-`GO` `ISOLATION`
-
-Runs Claude Code jobs in containers with resource limits, timeouts, and stored results.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 05 · ⚙️ [Praxis Engine](https://github.com/pkmdev-sec/praxis-engine)
-
-`RUST` `KNOWLEDGE RETRIEVAL`
-
-Compresses reusable agent knowledge and retrieves only the parts that match the task.
-
-</td>
-<td width="50%" valign="top">
-
-### 06 · 🧱 [CIS Hardened AMI](https://github.com/pkmdev-sec/CIS-Hardened-AMI)
-
-`PACKER` `ANSIBLE` `CLOUD HARDENING`
-
-Builds repeatable cloud images from CIS Level 1 and Level 2 hardening rules.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 07 · 🌩️ [AWS Subdomain Takeover Detector](https://github.com/pkmdev-sec/AWS_Subdomain_Takeover_Detector)
-
-`PYTHON` `AWS SECURITY`
-
-Checks Route 53 records and connected AWS services for possible subdomain takeover.
-
-</td>
-<td width="50%" valign="top">
-
-### 08 · 🌲 [Arbor](https://github.com/pkmdev-sec/Arbor)
-
-`JAVASCRIPT` `MULTI-AGENT`
-
-Runs Claude Code agents in separate Git worktrees and merges their completed work.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 09 · ✦ [Zenith](https://github.com/pkmdev-sec/zenith)
-
-`TYPESCRIPT` `RESEARCH`
-
-A terminal research workflow that connects claims to sources and review steps.
-
-</td>
-<td width="50%" valign="top">
-
-### ↗ [Explore the full workbench](https://github.com/pkmdev-sec?tab=repositories)
-
-`OPEN SOURCE` `EXPERIMENTS`
-
-Browse the complete archive of public tools, prototypes, and supporting packages.
-
-</td>
-</tr>
-</table>
+- 💰 **[skylily-cost-tracker](https://github.com/pkmdev-sec/skylily-cost-tracker)** — Tracks and reviews LLM API costs.
+- 🧠 **[skylily-smart-router](https://github.com/pkmdev-sec/skylily-smart-router)** — Routes tasks to models by complexity.
+- 📚 **[skylily-doc-gen](https://github.com/pkmdev-sec/skylily-doc-gen)** — Generates documentation from a codebase.
+- 🌿 **[skylily-git-smart](https://github.com/pkmdev-sec/skylily-git-smart)** — Helps write commits, changelogs, and pull requests.
+- 📊 **[skylily-dashboard](https://github.com/pkmdev-sec/skylily-dashboard)** — A dashboard for the Skylily tool set.
+- 💓 **[skylily-pulsed](https://github.com/pkmdev-sec/skylily-pulsed)** — Reports system, container, network, and service health.
+- 🚪 **[skylily-llm-proxy](https://github.com/pkmdev-sec/skylily-llm-proxy)** — A proxy for LLM requests.
+- 🧭 **[skylily-code-router](https://github.com/pkmdev-sec/skylily-code-router)** — Routes tasks to installed coding agents.
+- 🧩 **[skylily-skill](https://github.com/pkmdev-sec/skylily-skill)** — Shell tools for Skylily skills.
 
 ## Build History
 
-Every day is a green dot. Brighter, larger dots mark real contribution days.
+Each day uses the same green dot. Brighter dots show recorded contributions.
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/build-history-mobile.svg">

@@ -74,7 +74,7 @@ MOBILE = Layout(
     mobile=True,
 )
 
-LEVEL_COLORS = ("#10281D", "#14532D", "#15803D", "#22C55E", "#86EFAC")
+LEVEL_COLORS = ("#14532D", "#166534", "#15803D", "#22C55E", "#86EFAC")
 
 
 class ContributionParser(HTMLParser):
@@ -212,7 +212,7 @@ def contribution_grid(days: list[Contribution], layout: Layout) -> str:
             f'<text x="{layout.grid_x - 14}" y="{y}" text-anchor="end" fill="#4F8C72" '
             f'font-size="{layout.grid_label_size - 1}" font-weight="650">{label}</text>'
         )
-    radii = (1.8, 2.5, 3.0, 3.6, 4.0) if layout.mobile else (3.0, 4.0, 5.0, 6.0, 7.0)
+    radius = 3.2 if layout.mobile else 5.2
     for item in days:
         week = (item.day - start).days // 7
         weekday = (item.day.weekday() + 1) % 7
@@ -221,10 +221,8 @@ def contribution_grid(days: list[Contribution], layout: Layout) -> str:
         level = max(0, min(item.level, 4))
         color = LEVEL_COLORS[level]
         label = "contribution" if item.count == 1 else "contributions"
-        delay = -((week * 7 + weekday) % 13) * 0.17
         pieces.append(
-            f'<circle class="activity-dot level-{level}" cx="{x:g}" cy="{y:g}" r="{radii[level]}" '
-            f'fill="{color}" style="animation-delay:{delay:.2f}s">'
+            f'<circle class="activity-dot level-{level}" cx="{x:g}" cy="{y:g}" r="{radius}" fill="{color}">'
             f'<title>{item.day.isoformat()}: {item.count} {label}</title></circle>'
         )
     return "".join(pieces)
@@ -253,12 +251,9 @@ def render_svg(days: list[Contribution], layout: Layout) -> str:
   <radialGradient id="history-glow"><stop stop-color="#22C55E" stop-opacity=".2"/><stop offset="1" stop-color="#22C55E" stop-opacity="0"/></radialGradient>
   <pattern id="history-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#86EFAC" stroke-opacity=".035"/></pattern>
   <style>
-    .activity-dot {{ transform-box:fill-box; transform-origin:center; }}
-    .level-1,.level-2,.level-3,.level-4 {{ animation:activity-pulse 3.4s ease-in-out infinite; }}
     .signal-ring {{ transform-box:fill-box; transform-origin:center; animation:signal 2.8s ease-out infinite; }}
-    @keyframes activity-pulse {{ 0%,100% {{ opacity:.72; transform:scale(.86); }} 50% {{ opacity:1; transform:scale(1); }} }}
     @keyframes signal {{ 0% {{ opacity:.5; transform:scale(.6); }} 70%,100% {{ opacity:0; transform:scale(1.2); }} }}
-    @media (prefers-reduced-motion:reduce) {{ .activity-dot,.signal-ring {{ animation:none; }} }}
+    @media (prefers-reduced-motion:reduce) {{ .signal-ring {{ animation:none; }} }}
   </style>
 </defs>
 <rect x="1" y="1" width="{layout.width - 2}" height="{layout.height - 2}" rx="24" fill="url(#history-bg)" stroke="#1B5E43" stroke-width="2"/>
