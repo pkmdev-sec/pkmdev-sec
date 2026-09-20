@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Puneet Kumar Maurya</title>
+  <desc id="desc">AI security, agent systems, and cloud engineering.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070A12"/>
+      <stop offset="0.55" stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#11102A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="0.52" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.42"/>
+      <stop offset="0.58" stop-color="#22D3EE" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#070A12" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#94A3B8" stroke-opacity="0.075" stroke-width="1"/>
+    </pattern>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <clipPath id="frame">
+      <rect x="1" y="1" width="1198" height="358" rx="26"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="360" fill="url(#bg)"/>
+    <rect width="1200" height="360" fill="url(#grid)"/>
+    <ellipse cx="1010" cy="170" rx="330" ry="280" fill="url(#glow)"/>
+    <path d="M0 320C250 245 390 374 650 298S980 220 1200 270V360H0Z" fill="#8B5CF6" fill-opacity="0.055"/>
+
+    <g transform="translate(72 55)" font-family="Inter,Segoe UI,Arial,sans-serif">
+      <g>
+        <rect width="151" height="28" rx="14" fill="#111827" stroke="#334155"/>
+        <circle cx="16" cy="14" r="4" fill="#22D3EE"/>
+        <text x="28" y="19" fill="#CBD5E1" font-size="11" font-weight="700" letter-spacing="2">PKM / PROFILE</text>
+      </g>
+
+      <text x="0" y="102" fill="#F8FAFC" font-size="64" font-weight="800" letter-spacing="-2">PUNEET</text>
+      <text x="0" y="157" fill="#A5B4FC" font-size="44" font-weight="650" letter-spacing="4">KUMAR MAURYA</text>
+      <rect x="0" y="180" width="520" height="3" rx="1.5" fill="url(#accent)"/>
+      <text x="0" y="218" fill="#94A3B8" font-size="16" font-weight="600" letter-spacing="2.5">SECURITY ENGINEER · OPEN-SOURCE BUILDER</text>
+
+      <g transform="translate(0 246)" font-size="11" font-weight="700" letter-spacing="1.2">
+        <g>
+          <rect width="112" height="30" rx="15" fill="#0E7490" fill-opacity="0.22" stroke="#22D3EE" stroke-opacity="0.48"/>
+          <text x="56" y="19" text-anchor="middle" fill="#A5F3FC">AI SECURITY</text>
+        </g>
+        <g transform="translate(124)">
+          <rect width="130" height="30" rx="15" fill="#6D28D9" fill-opacity="0.2" stroke="#8B5CF6" stroke-opacity="0.5"/>
+          <text x="65" y="19" text-anchor="middle" fill="#DDD6FE">AGENT SYSTEMS</text>
+        </g>
+        <g transform="translate(266)">
+          <rect width="166" height="30" rx="15" fill="#BE185D" fill-opacity="0.16" stroke="#EC4899" stroke-opacity="0.46"/>
+          <text x="83" y="19" text-anchor="middle" fill="#FBCFE8">CLOUD ENGINEERING</text>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(931 178)">
+      <circle r="117" fill="none" stroke="#8B5CF6" stroke-opacity="0.18"/>
+      <circle r="88" fill="none" stroke="#22D3EE" stroke-opacity="0.24" stroke-dasharray="4 11"/>
+      <circle r="60" fill="#0B1020" stroke="url(#accent)" stroke-width="2"/>
+      <circle r="48" fill="none" stroke="#F8FAFC" stroke-opacity="0.08"/>
+      <path d="M0-34 30-17v34L0 34-30 17v-34Z" fill="none" stroke="url(#accent)" stroke-width="2.5"/>
+      <path d="M-15 1-4 12 19-14" fill="none" stroke="#F8FAFC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="-92" cy="-72" r="4" fill="#22D3EE"/>
+      <circle cx="108" cy="-46" r="5" fill="#8B5CF6"/>
+      <circle cx="84" cy="91" r="3.5" fill="#EC4899"/>
+      <path d="M-92-72 0-34M108-46 30-17M84 91 0 34" stroke="#64748B" stroke-opacity="0.32"/>
+      <circle r="8" fill="#8B5CF6" opacity="0.32" filter="url(#softGlow)"/>
+    </g>
+
+    <g fill="#64748B" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" letter-spacing="1.2">
+      <text x="1111" y="32">01 / 03</text>
+      <text x="1080" y="334">DEL · INDIA</text>
+    </g>
+  </g>
+  <rect x="1" y="1" width="1198" height="358" rx="26" fill="none" stroke="#334155" stroke-opacity="0.8" stroke-width="2"/>
+</svg>

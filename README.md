@@ -1,125 +1,244 @@
-<h1 align="center">
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/v4/nameplate-mobile.svg">
-  <img src="assets/v4/nameplate-desktop.svg" alt="Puneet Kumar Maurya" width="100%">
-</picture>
-</h1>
-<p align="center"><strong>Staff Cloud Security Engineer at Twilio</strong><br>AI Security &nbsp; · &nbsp; Agentic Vulnerability Research</p>
-<p align="center"><a href="#featured-projects">Featured projects</a> &nbsp; · &nbsp; <a href="#more-builds">More builds</a> &nbsp; · &nbsp; <a href="#experience">Experience</a> &nbsp; · &nbsp; <a href="https://www.linkedin.com/in/pkmdev">LinkedIn ↗</a></p>
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-hero-mobile.svg">
+    <img src="assets/profile-hero.svg" alt="Puneet Kumar Maurya — AI security, agent systems, and cloud engineering" width="100%">
+  </picture>
+</p>
 
-I build tools for finding security risks and making agent workflows easier to inspect. My public work spans secret scanning, persistent memory, research orchestration, and cloud security automation.
+<h1 align="center">Hi, I'm Puneet 👋</h1>
 
-## Featured projects
+<p align="center">
+  📍 <strong>Delhi</strong> &nbsp;·&nbsp; 🛡️ <strong>Staff Cloud Security Engineer at Twilio</strong> &nbsp;·&nbsp; 🤖 <strong>AI security builder</strong>
+</p>
 
-### [01 / Morphex](https://github.com/pkmdev-sec/morphex.sh)
+<p align="center">
+  I build security tools and agent systems. I make their results clear, useful, and easy to check.
+</p>
 
-<a href="https://github.com/pkmdev-sec/morphex.sh"><img src="assets/v3/morphex.png" alt="Morphex — secret scanning with context. A conceptual illustration of an optical scanner tracing a signal through layered source files." width="100%"></a>
+<p align="center">
+  <img src="https://img.shields.io/badge/Go-07111F?style=flat-square&logo=go&logoColor=22D3EE" alt="Go">
+  <img src="https://img.shields.io/badge/TypeScript-07111F?style=flat-square&logo=typescript&logoColor=8B5CF6" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Python-07111F?style=flat-square&logo=python&logoColor=22D3EE" alt="Python">
+  <img src="https://img.shields.io/badge/Rust-07111F?style=flat-square&logo=rust&logoColor=F8FAFC" alt="Rust">
+  <img src="https://img.shields.io/badge/AWS-07111F?style=flat-square&logo=amazonwebservices&logoColor=F59E0B" alt="AWS">
+  <img src="https://img.shields.io/badge/Kubernetes-07111F?style=flat-square&logo=kubernetes&logoColor=8B5CF6" alt="Kubernetes">
+  <img src="https://img.shields.io/badge/Terraform-07111F?style=flat-square&logo=terraform&logoColor=22D3EE" alt="Terraform">
+</p>
 
-**A finding should explain why it needs attention.** Morphex is a Go secret scanner that examines variable names, value shape, file context, and surrounding code.
+<p align="center">
+  <a href="#start-here">Start here</a> &nbsp;·&nbsp;
+  <a href="#current-projects">All projects</a> &nbsp;·&nbsp;
+  <a href="#what-im-doing">Current work</a> &nbsp;·&nbsp;
+  <a href="#experience">Experience</a> &nbsp;·&nbsp;
+  <a href="#connect">Connect</a>
+</p>
 
-The interesting part is what travels with the result: classification signals and reasoning that a reviewer can inspect. Context is part of the finding, rather than something the reviewer has to reconstruct from a matched string.
+## Start Here
 
-[Explore the code ↗](https://github.com/pkmdev-sec/morphex.sh) &nbsp; · &nbsp; [Project site & illustrative demo ↗](https://www.morphex.sh/)
+<table>
+<tr>
+<td width="50%" valign="top">
 
----
+### 🔍 [Morphex](https://github.com/pkmdev-sec/morphex.sh)
 
-### [02 / Engram](https://github.com/pkmdev-sec/engram)
+`GO` `AI SECURITY`
 
-<a href="https://github.com/pkmdev-sec/engram"><img src="assets/v3/engram.png" alt="Engram — memory across coding sessions. A conceptual archive of connected glass plates represents project knowledge carried between sessions." width="100%"></a>
+A secret scanner that reads code context, not only matched text. Each finding explains why it needs attention.
 
-**Keep useful context as the codebase changes.** Engram carries project knowledge between coding sessions, with checks against referenced files and Git history before reuse.
+</td>
+<td width="50%" valign="top">
 
-Memory lives in inspectable JSONL. Warnings and background context have separate limits, making the choice about what enters a session explicit. The focus is useful, reviewable context rather than an ever-growing transcript.
+### ◈ [Orvek](https://github.com/pkmdev-sec/orvek)
 
-[Explore the code ↗](https://github.com/pkmdev-sec/engram)
+`RUST` `CODING AGENT`
 
----
+A native terminal agent with local tools, resumable sessions, shared memory, and context compaction.
 
-### [03 / Zenith](https://github.com/pkmdev-sec/zenith)
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-<a href="https://github.com/pkmdev-sec/zenith"><img src="assets/v3/zenith.png" alt="Zenith — research built around evidence. A conceptual constellation connects claims and source nodes around a central lens." width="100%"></a>
+### 🧠 [Engram](https://github.com/pkmdev-sec/engram)
 
-**Research needs a trail from the claim back to its source.** Zenith is a terminal research workflow where agents can support, challenge, or qualify earlier claims.
+`TYPESCRIPT` `AGENT MEMORY`
 
-Claims and sources form a shared structure, with explicit review and delivery steps. Built on Pi and inspired by [MiroFish](https://github.com/666ghj/MiroFish).
+A knowledge layer that carries useful project context into future coding sessions.
 
-[Explore the code ↗](https://github.com/pkmdev-sec/zenith)
+</td>
+<td width="50%" valign="top">
 
-## More builds
+### ✦ [Zenith](https://github.com/pkmdev-sec/zenith)
 
-### [04 / Golduck](https://github.com/pkmdev-sec/golduck)
+`TYPESCRIPT` `RESEARCH`
 
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/v3/golduck-mobile.svg">
-  <img src="assets/v3/golduck-desktop.svg" alt="Golduck conceptual workflow: request, provider adapter, streaming and tools, traces and limits." width="100%">
-</picture>
+A terminal research workflow that connects claims to sources and review steps.
 
-A terminal agent with streaming responses, tool use, and adapters for different model APIs. A shared provider interface keeps integration choices separate from the agent loop. Run traces, turn limits, and controls on estimated spending make execution easier to inspect.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-### [05 / CIS Hardened AMI](https://github.com/pkmdev-sec/CIS-Hardened-AMI)
+### 🐥 [Golduck](https://github.com/pkmdev-sec/golduck)
 
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/v3/cis-mobile.svg">
-  <img src="assets/v3/cis-desktop.svg" alt="CIS Hardened AMI conceptual workflow: Packer builds an image using upstream Ansible hardening rules, producing an AMI artifact." width="100%">
-</picture>
+`JAVASCRIPT` `MULTI-MODEL`
 
-A repeatable image-building pipeline combining Packer with upstream Ansible hardening rules. Image creation and security rules stay separate so each can evolve independently. Earlier work from 2023, built with a collaborator credited in the repository.
+A terminal agent with streaming, tools, verification, memory, and support for many model providers.
 
-### [06 / AWS Subdomain Takeover Detector](https://github.com/pkmdev-sec/AWS_Subdomain_Takeover_Detector)
+</td>
+<td width="50%" valign="top">
 
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/v3/aws-mobile.svg">
-  <img src="assets/v3/aws-desktop.svg" alt="AWS Subdomain Takeover Detector conceptual workflow: Route 53 records, DNS and service checks, potential exposure, Slack review." width="100%">
-</picture>
+### 📦 [Agent Sandbox Orchestrator](https://github.com/pkmdev-sec/agents-sandboxing)
 
-Checks Route 53 records for potential takeover exposure, combining DNS checks with checks for S3, CloudFront, and Elastic Beanstalk. Potential issues go to Slack for review. Earlier cloud security work from 2021.
+`GO` `ISOLATION`
 
-### The wider workbench
+Runs Claude Code jobs in containers with resource limits, timeouts, and stored results.
 
-- **[Pi Evolver](https://github.com/pkmdev-sec/pi-evolver)** — Learns from session counts, outcomes, and recurring error signatures. An explicit command turns a pattern into a draft skill for a person to complete and review.
-- **[AWS policy exposure alerts](https://github.com/pkmdev-sec/Detect-Public-AWS-resources-misconfigured-via-Policy-Realtime)** — Checks policy-change events for potential public access and includes the policy in Slack alerts. Earlier work from 2021.
-- **[Cloudflare WAF alerting](https://github.com/pkmdev-sec/Cloudflare_waf_alerting)** — Groups blocked requests by IP and alerts when a count threshold is crossed. Earlier work from 2021.
-- **[Claude Max Context](https://github.com/pkmdev-sec/claude-max-context)** — Session handoff and compaction hooks, with configuration backups and an uninstall path. Compatibility depends on the Claude Code version.
-- **[CocoIndex Claude Code](https://github.com/pkmdev-sec/cocoindex-claude-code)** — Document search through MCP, using CocoIndex, hosted embeddings, and PostgreSQL with pgvector. Indexing and search share an embedding function.
-- **[OpenClaw Memory](https://github.com/pkmdev-sec/openclaw-mem)** — Agent memory using LanceDB and local models through Ollama, with backup and restore tooling.
-- **[Skylily Pulsed](https://github.com/pkmdev-sec/skylily-pulsed)** — A Rust service for system metrics, Docker state, network data, and service health. Separate collectors sit behind an HTTP API.
-- **[Skylily Code Router](https://github.com/pkmdev-sec/skylily-code-router)** — Routes tasks to installed coding agents. Recommendations can be inspected before execution.
+</td>
+</tr>
+</table>
 
-[Browse all public repositories ↗](https://github.com/pkmdev-sec?tab=repositories)
+## Current Projects
 
-## Current research
+The main public projects are listed below. Use the [repository view](https://github.com/pkmdev-sec?tab=repositories) to see every repository.
 
-I’m currently focused on **AI security**, building an **agentic security harness** to investigate vulnerabilities in our systems, including potential zero-days. The goal is repeatable security research with findings that people can examine and validate. This work is private.
+### Agent Systems & Developer Tools
 
-Across my public projects, a recurring concern is what another engineer needs to see to trust a result: the reasoning behind a finding, the source behind a claim, or the context behind an agent’s action.
+- 🧬 **[sigil](https://github.com/pkmdev-sec/sigil)** — A prompt engineering platform for Claude Code.
+- 🧠 **[openclaw-mem](https://github.com/pkmdev-sec/openclaw-mem)** — Stores and searches agent memory, with local models and optional device sync.
+- 🌲 **[Arbor](https://github.com/pkmdev-sec/Arbor)** — Runs Claude Code workers in parallel with separate context.
+- 🎛️ **[praxis](https://github.com/pkmdev-sec/praxis)** — Assigns thinking budgets from task complexity and tracks cost.
+- 🧭 **[revolutionary-ai-orchestrator](https://github.com/pkmdev-sec/revolutionary-ai-orchestrator)** — Runs isolated AI workers in tmux.
+- ⚡ **[rust-ai-gateway](https://github.com/pkmdev-sec/rust-ai-gateway)** — An AI API gateway written in Rust.
+- ⚙️ **[praxis-engine](https://github.com/pkmdev-sec/praxis-engine)** — The Rust engine for Praxis.
+- 🧩 **[claude-intelligence-setup](https://github.com/pkmdev-sec/claude-intelligence-setup)** — Adds hooks, agents, and a learning loop to Claude Code.
+- ◈ **[orvek](https://github.com/pkmdev-sec/orvek)** — A native coding agent with local tools and resumable sessions.
+- 🛠️ **[forge](https://github.com/pkmdev-sec/forge)** — Creates custom tools from YAML and serves them through MCP.
+- ⏪ **[echo](https://github.com/pkmdev-sec/echo)** — Records agent sessions and shows usage analytics.
+- 🔀 **[chimera](https://github.com/pkmdev-sec/chimera)** — Routes requests across model providers and handles failover.
+- 🌐 **[umwelt](https://github.com/pkmdev-sec/umwelt)** — Describes the working environment for AI-assisted development.
+- 🔗 **[nexus](https://github.com/pkmdev-sec/nexus)** — Keeps cross-session context in a knowledge graph.
+- 🐉 **[hydra](https://github.com/pkmdev-sec/hydra)** — Runs several models and compares quality and cost.
+- 🔮 **[oracle](https://github.com/pkmdev-sec/oracle)** — Predicts and loads files that may matter to the next task.
+- 👁️ **[veyro](https://github.com/pkmdev-sec/veyro)** — Supervises coding agents locally and asks for exact approvals.
+- 🌱 **[pi-evolver](https://github.com/pkmdev-sec/pi-evolver)** — Learns from Pi sessions and proposes reviewed skills.
+- 📚 **[claude-max-context](https://github.com/pkmdev-sec/claude-max-context)** — Tunes compaction and keeps state during Claude Code sessions.
+- 🐥 **[golduck](https://github.com/pkmdev-sec/golduck)** — A model-independent terminal agent with tools and a full TUI.
+- ✦ **[zenith](https://github.com/pkmdev-sec/zenith)** — A terminal research agent that keeps claims and sources together.
+- 🧠 **[engram](https://github.com/pkmdev-sec/engram)** — Adds useful knowledge from past sessions to new sessions.
+- 🔎 **[cocoindex-claude-code](https://github.com/pkmdev-sec/cocoindex-claude-code)** — Adds semantic document search to Claude Code through MCP.
+- 📝 **[claude-auto-documenter-v2](https://github.com/pkmdev-sec/claude-auto-documenter-v2)** — Generates project documentation through an MCP server.
+
+### Security & Cloud Engineering
+
+- 🛡️ **[warden](https://github.com/pkmdev-sec/warden)** — Enforces policies and records an audit trail.
+- 📦 **[agents-sandboxing](https://github.com/pkmdev-sec/agents-sandboxing)** — Runs Claude Code jobs in isolated containers.
+- 👻 **[specter](https://github.com/pkmdev-sec/specter)** — Checks syntax, security, and agent output quality.
+- 🔍 **[morphex.sh](https://github.com/pkmdev-sec/morphex.sh)** — Scans code for secrets and explains each result.
+- 🌩️ **[AWS_Subdomain_Takeover_Detector](https://github.com/pkmdev-sec/AWS_Subdomain_Takeover_Detector)** — Checks AWS DNS records for possible subdomain takeover.
+- ⛓️ **[web3-blockchain-learning-curriculum](https://github.com/pkmdev-sec/web3-blockchain-learning-curriculum)** — A Web3 and blockchain security learning path.
+- ☁️ **[Cloudflare_waf_alerting](https://github.com/pkmdev-sec/Cloudflare_waf_alerting)** — Sends alerts for Cloudflare WAF events.
+- 🚨 **[Detect-Public-AWS-resources-misconfigured-via-Policy-Realtime](https://github.com/pkmdev-sec/Detect-Public-AWS-resources-misconfigured-via-Policy-Realtime)** — Detects AWS policy changes that can expose resources.
+- 🧱 **[CIS-Hardened-AMI](https://github.com/pkmdev-sec/CIS-Hardened-AMI)** — Builds hardened Amazon Machine Images from CIS rules.
+- 🌐 **[Detecting_Elastic_IP_Takeover_Realtime](https://github.com/pkmdev-sec/Detecting_Elastic_IP_Takeover_Realtime)** — Detects exposed Elastic IP configurations.
+- 🧰 **[AWS_Waf-Automation](https://github.com/pkmdev-sec/AWS_Waf-Automation)** — A set of AWS WAF automation scripts.
+- 🔐 **[AWS_Cloud_Security_Automations](https://github.com/pkmdev-sec/AWS_Cloud_Security_Automations)** — A collection of AWS security automations.
+- 🧭 **[R53-Orphaned-Entries-Detection](https://github.com/pkmdev-sec/R53-Orphaned-Entries-Detection)** — Finds orphaned Route 53 records in an AWS account.
+- 🪣 **[Reatime_S3_Public_Bucket-Object_Alerts](https://github.com/pkmdev-sec/Reatime_S3_Public_Bucket-Object_Alerts)** — Sends Slack alerts when an S3 bucket or object becomes public.
+
+### Apps & Interfaces
+
+- 🔖 **[MarklyAI](https://github.com/pkmdev-sec/MarklyAI)** — An AI-assisted bookmark manager for macOS.
+- ⌚ **[Noop-clone](https://github.com/pkmdev-sec/Noop-clone)** — A public fork of an offline WHOOP companion.
+- 🖥️ **[muxy](https://github.com/pkmdev-sec/muxy)** — A public fork of a lightweight SwiftUI terminal for macOS.
+- ✨ **[purewin-ui](https://github.com/pkmdev-sec/purewin-ui)** — A 3D marketing site built with React and Spline.
+- 🪟 **[arcmark-windows](https://github.com/pkmdev-sec/arcmark-windows)** — A Windows bookmark manager built with WPF and .NET 8.
+- 🧹 **[purewin](https://github.com/pkmdev-sec/purewin)** — A public fork of a Windows cleanup and optimization CLI.
+
+### Skylily: AI & Products
+
+- 💰 **[skylily-cost-tracker](https://github.com/pkmdev-sec/skylily-cost-tracker)** — Tracks and reviews LLM API costs.
+- 🧠 **[skylily-smart-router](https://github.com/pkmdev-sec/skylily-smart-router)** — Routes tasks to models by complexity.
+- 📚 **[skylily-doc-gen](https://github.com/pkmdev-sec/skylily-doc-gen)** — Generates documentation from a codebase.
+- 🌿 **[skylily-git-smart](https://github.com/pkmdev-sec/skylily-git-smart)** — Helps write commits, changelogs, and pull requests.
+- 📊 **[skylily-dashboard](https://github.com/pkmdev-sec/skylily-dashboard)** — A dashboard for the Skylily tool set.
+- 💓 **[skylily-pulsed](https://github.com/pkmdev-sec/skylily-pulsed)** — Reports system, container, network, and service health.
+- 🚪 **[skylily-llm-proxy](https://github.com/pkmdev-sec/skylily-llm-proxy)** — A proxy for LLM requests.
+- 🧭 **[skylily-code-router](https://github.com/pkmdev-sec/skylily-code-router)** — Routes tasks to installed coding agents.
+- 🧩 **[skylily-skill](https://github.com/pkmdev-sec/skylily-skill)** — Shell tools for Skylily skills.
+
+### Skylily: Workflow & Operations
+
+- 🧹 **[skylily-clean](https://github.com/pkmdev-sec/skylily-clean)** — Cleans generated project files.
+- 🌱 **[skylily-init](https://github.com/pkmdev-sec/skylily-init)** — Starts new Skylily projects.
+- ▶️ **[skylily-run](https://github.com/pkmdev-sec/skylily-run)** — Runs project commands.
+- 👀 **[skylily-watch](https://github.com/pkmdev-sec/skylily-watch)** — Watches files and starts tasks.
+- ✅ **[skylily-task](https://github.com/pkmdev-sec/skylily-task)** — Defines and runs project tasks.
+- 🌿 **[skylily-env](https://github.com/pkmdev-sec/skylily-env)** — Reads and checks environment settings.
+- 🩺 **[skylily-doctor](https://github.com/pkmdev-sec/skylily-doctor)** — Checks a local development setup.
+- 🚀 **[skylily-release](https://github.com/pkmdev-sec/skylily-release)** — Supports package releases.
+- 📋 **[skylily-changelog](https://github.com/pkmdev-sec/skylily-changelog)** — Creates changelog entries.
+- ✨ **[skylily-format](https://github.com/pkmdev-sec/skylily-format)** — Formats project files.
+- 🔎 **[skylily-lint](https://github.com/pkmdev-sec/skylily-lint)** — Runs lint checks.
+- ⏱️ **[skylily-bench](https://github.com/pkmdev-sec/skylily-bench)** — Runs benchmarks.
+- 🧱 **[skylily-template](https://github.com/pkmdev-sec/skylily-template)** — Provides reusable project templates.
+- 🔑 **[skylily-secrets](https://github.com/pkmdev-sec/skylily-secrets)** — Handles project secrets.
+- 🧪 **[skylily-tests](https://github.com/pkmdev-sec/skylily-tests)** — Shared test scripts.
+- 📡 **[skylily-monitor](https://github.com/pkmdev-sec/skylily-monitor)** — Monitors running services.
+- ❤️ **[skylily-health](https://github.com/pkmdev-sec/skylily-health)** — Checks service health.
+- 💾 **[skylily-backup](https://github.com/pkmdev-sec/skylily-backup)** — Creates and restores backups.
+- 📦 **[skylily-deploy](https://github.com/pkmdev-sec/skylily-deploy)** — Supports application deployment.
+- 🕒 **[skylily-cron](https://github.com/pkmdev-sec/skylily-cron)** — Schedules recurring jobs.
+
+### Learning & Profile
+
+- 🪪 **[pkmdev-sec](https://github.com/pkmdev-sec/pkmdev-sec)** — Source files for this GitHub profile.
+- 🔐 **[Authentication-Webapp](https://github.com/pkmdev-sec/Authentication-Webapp)** — A Python authentication web app.
+- 🧪 **[Take-Home-Test](https://github.com/pkmdev-sec/Take-Home-Test)** — A public Python take-home exercise.
+- 📤 **[Django_file_upload](https://github.com/pkmdev-sec/Django_file_upload)** — A Django file upload example.
+
+## GitHub Activity
+
+![GitHub contribution graph](https://gitlyy.vercel.app/api/contribution?username=pkmdev-sec&hide_border=true)
+
+## What I'm Doing
+
+- **AI security** — I build repeatable ways to test agent systems and investigate vulnerabilities.
+- **Agent tools** — I build coding agents, context systems, and reviewable workflows.
+- **Open source** — I turn recurring engineering problems into tools that other people can inspect.
+- **Cloud security** — I apply lessons from cloud and application security to AI systems.
 
 ## Experience
 
-My background spans **cloud security, DevSecOps, and application security**. That work informs how I approach AI security today: understand the trust boundaries, build controls into engineering workflows, and keep the evidence behind a decision.
-
-**Twilio — Staff Cloud Security Engineer**  
-Current role, focused on AI security and agentic security harnesses for vulnerability research.
-
-**HelloBetter — Senior DevSecOps Engineer**  
-Architected cloud infrastructure serving 200K+ healthcare users. Built CI/CD pipelines with static and dynamic security testing across 25+ microservices, alongside Kubernetes security controls across 15+ clusters.
-
-**Zepto — Lead Security Engineer**  
-Established a DevSecOps maturity model and integrated security testing into delivery. Worked on PCI DSS Level 1 compliance through automated controls and monitoring. Ran 25+ risk assessments and threat-modeling sessions, with Terraform automation managing 500+ cloud resources.
-
-**Atlan — Senior Security Engineer**  
-Built an AMI hardening pipeline using immutable infrastructure and CIS benchmarks. Automated container compliance monitoring and security controls supporting SOC 2 Type II and GDPR audits.
-
-**Dream11 — Application Security Engineer**  
-Worked across penetration testing, WAF protection, and security monitoring. Validated 40+ penetration tests using OWASP methods, identifying 200+ security issues. Built SIEM and incident-response automation.
+- **Twilio — Staff Cloud Security Engineer** — I focus on AI security and agent security research.
+- **HelloBetter — Senior DevSecOps Engineer** — I designed cloud infrastructure, delivery pipelines, and Kubernetes security controls.
+- **Zepto — Lead Security Engineer** — I built security testing, compliance controls, and threat-modeling practices.
+- **Atlan — Senior Security Engineer** — I built image hardening and container compliance automation.
+- **Dream11 — Application Security Engineer** — I worked on application testing, WAF protection, monitoring, and incident response.
 
 <details>
 <summary><strong>Working toolkit</strong></summary>
 
-**Cloud & platforms** — AWS · GCP · Azure · Kubernetes · Docker  
-**Infrastructure & delivery** — Terraform · CloudFormation · Packer · Ansible · Helm · Argo CD · GitHub Actions · Jenkins · GitLab CI/CD  
-**Security & operations** — SAST/DAST · OWASP methods · WAF · SIEM · CIS benchmarks · Prometheus · Grafana · ELK · Splunk  
-**Code** — Python · Go · JavaScript / TypeScript · Node.js · Bash · SQL
+<br>
+
+**Cloud and platforms** — AWS · GCP · Azure · Kubernetes · Docker<br>
+**Infrastructure and delivery** — Terraform · CloudFormation · Packer · Ansible · Helm · Argo CD · GitHub Actions<br>
+**Security and operations** — SAST · DAST · OWASP · WAF · SIEM · CIS benchmarks · Prometheus · Grafana<br>
+**Code** — Python · Go · Rust · TypeScript · JavaScript · Bash · SQL
 
 </details>
 
-<p align="center"><a href="https://www.linkedin.com/in/pkmdev">Connect on LinkedIn ↗</a></p>
+## Connect
+
+<p align="left">
+  <a href="https://www.linkedin.com/in/pkmdev"><img src="https://img.shields.io/badge/LinkedIn-Puneet_Maurya-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://x.com/punitmau"><img src="https://img.shields.io/badge/X-@punitmau-111827?style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
+  <a href="https://github.com/pkmdev-sec"><img src="https://img.shields.io/badge/GitHub-Follow-7C3AED?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+</p>
+
+---
+
+### Philosophy
+
+> **Make the result easy to trust.**<br>
+> Security tools should show context. Research should show sources. Agent workflows should leave a clear trail.
