@@ -26,14 +26,15 @@
 </p>
 
 <p align="center">
-  <a href="#start-here">Start here</a> &nbsp;·&nbsp;
-  <a href="#current-projects">All projects</a> &nbsp;·&nbsp;
-  <a href="#what-im-doing">Current work</a> &nbsp;·&nbsp;
-  <a href="#experience">Experience</a> &nbsp;·&nbsp;
+  <a href="#selected-work">Selected work</a> &nbsp;·&nbsp;
+  <a href="#project-index">Project index</a> &nbsp;·&nbsp;
+  <a href="#build-history">Build history</a> &nbsp;·&nbsp;
+  <a href="#current-focus">Current focus</a> &nbsp;·&nbsp;
+  <a href="#career">Career</a> &nbsp;·&nbsp;
   <a href="#connect">Connect</a>
 </p>
 
-## Start Here
+## Selected Work
 
 <table>
 <tr>
@@ -98,7 +99,7 @@ Runs Claude Code jobs in containers with resource limits, timeouts, and stored r
 </tr>
 </table>
 
-## Current Projects
+## Project Index
 
 The main public projects are listed below. Use the [repository view](https://github.com/pkmdev-sec?tab=repositories) to see every repository.
 
@@ -167,29 +168,6 @@ The main public projects are listed below. Use the [repository view](https://git
 - 🧭 **[skylily-code-router](https://github.com/pkmdev-sec/skylily-code-router)** — Routes tasks to installed coding agents.
 - 🧩 **[skylily-skill](https://github.com/pkmdev-sec/skylily-skill)** — Shell tools for Skylily skills.
 
-### Skylily: Workflow & Operations
-
-- 🧹 **[skylily-clean](https://github.com/pkmdev-sec/skylily-clean)** — Cleans generated project files.
-- 🌱 **[skylily-init](https://github.com/pkmdev-sec/skylily-init)** — Starts new Skylily projects.
-- ▶️ **[skylily-run](https://github.com/pkmdev-sec/skylily-run)** — Runs project commands.
-- 👀 **[skylily-watch](https://github.com/pkmdev-sec/skylily-watch)** — Watches files and starts tasks.
-- ✅ **[skylily-task](https://github.com/pkmdev-sec/skylily-task)** — Defines and runs project tasks.
-- 🌿 **[skylily-env](https://github.com/pkmdev-sec/skylily-env)** — Reads and checks environment settings.
-- 🩺 **[skylily-doctor](https://github.com/pkmdev-sec/skylily-doctor)** — Checks a local development setup.
-- 🚀 **[skylily-release](https://github.com/pkmdev-sec/skylily-release)** — Supports package releases.
-- 📋 **[skylily-changelog](https://github.com/pkmdev-sec/skylily-changelog)** — Creates changelog entries.
-- ✨ **[skylily-format](https://github.com/pkmdev-sec/skylily-format)** — Formats project files.
-- 🔎 **[skylily-lint](https://github.com/pkmdev-sec/skylily-lint)** — Runs lint checks.
-- ⏱️ **[skylily-bench](https://github.com/pkmdev-sec/skylily-bench)** — Runs benchmarks.
-- 🧱 **[skylily-template](https://github.com/pkmdev-sec/skylily-template)** — Provides reusable project templates.
-- 🔑 **[skylily-secrets](https://github.com/pkmdev-sec/skylily-secrets)** — Handles project secrets.
-- 🧪 **[skylily-tests](https://github.com/pkmdev-sec/skylily-tests)** — Shared test scripts.
-- 📡 **[skylily-monitor](https://github.com/pkmdev-sec/skylily-monitor)** — Monitors running services.
-- ❤️ **[skylily-health](https://github.com/pkmdev-sec/skylily-health)** — Checks service health.
-- 💾 **[skylily-backup](https://github.com/pkmdev-sec/skylily-backup)** — Creates and restores backups.
-- 📦 **[skylily-deploy](https://github.com/pkmdev-sec/skylily-deploy)** — Supports application deployment.
-- 🕒 **[skylily-cron](https://github.com/pkmdev-sec/skylily-cron)** — Schedules recurring jobs.
-
 ### Learning & Profile
 
 - 🪪 **[pkmdev-sec](https://github.com/pkmdev-sec/pkmdev-sec)** — Source files for this GitHub profile.
@@ -197,18 +175,23 @@ The main public projects are listed below. Use the [repository view](https://git
 - 🧪 **[Take-Home-Test](https://github.com/pkmdev-sec/Take-Home-Test)** — A public Python take-home exercise.
 - 📤 **[Django_file_upload](https://github.com/pkmdev-sec/Django_file_upload)** — A Django file upload example.
 
-## GitHub Activity
+## Build History
 
-![GitHub contribution graph](https://gitlyy.vercel.app/api/contribution?username=pkmdev-sec&hide_border=true)
+A custom view of my public GitHub activity.
 
-## What I'm Doing
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/build-history-mobile.svg">
+  <img src="assets/build-history.svg" alt="Puneet's GitHub build history in an emerald contribution calendar" width="100%">
+</picture>
+
+## Current Focus
 
 - **AI security** — I build repeatable ways to test agent systems and investigate vulnerabilities.
 - **Agent tools** — I build coding agents, context systems, and reviewable workflows.
 - **Open source** — I turn recurring engineering problems into tools that other people can inspect.
 - **Cloud security** — I apply lessons from cloud and application security to AI systems.
 
-## Experience
+## Career
 
 - **Twilio — Staff Cloud Security Engineer** — I focus on AI security and agent security research.
 - **HelloBetter — Senior DevSecOps Engineer** — I designed cloud infrastructure, delivery pipelines, and Kubernetes security controls.
@@ -238,7 +221,7 @@ The main public projects are listed below. Use the [repository view](https://git
 
 ---
 
-### Philosophy
+### Working Principle
 
 > **Make the result easy to trust.**<br>
 > Security tools should show context. Research should show sources. Agent workflows should leave a clear trail.
