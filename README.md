@@ -40,4 +40,4 @@ Previously worked in security engineering at HelloBetter, Zepto, Atlan, and Drea
 
 [Website](https://pkmdev.com) · [LinkedIn](https://www.linkedin.com/in/pkmdev) · [X](https://x.com/punitmau)
 
-<sub>Pixel icons by [Freepik](https://www.flaticon.com/authors/freepik) on [Flaticon](https://www.flaticon.com/free-icon/star_12414781).</sub>
+<sub>Pixel icons by [Magnific](https://www.flaticon.com/authors/magnific) on [Flaticon](https://www.flaticon.com/free-icon/star_12414781).</sub>
